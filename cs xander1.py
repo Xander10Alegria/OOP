@@ -1,11 +1,19 @@
-stu_name = input("student:")
+class1= int(input("enter grade for "))
+class2 = int(input("enter grade for "))
+class3 = int(input("enter grade for "))
+class4 = int(input("enter grade for "))
+class5 = int(input("enter grade for "))
 
-course1 = int (input("enter grade course1:") )
-course2 = int (input("enter grade course2:") )
-course3 = int (input("enter grade course3:") )
-course4 = int (input("enter grade course4:") )
-course5 = int (input("enter grade course5:") )
+total = class1+class2+class3+class4+class5
+total_percentage = total/5
 
-total = course1+course2+course3+course4+course5
-print(total)
-print(total/5)
+if total_percentage <100 and total_percentage>90:
+    print ("grade A")
+elif total_percentage <100 and total_percentage>90:
+    print ("grade B")
+elif total_percentage <100 and total_percentage>90:
+    print ("grade C")
+elif total_percentage <100 and total_percentage>90:
+    print ("grade D")
+elif total_percentage <100 and total_percentage>90:
+    print ("grade E")
