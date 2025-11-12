@@ -1,26 +1,22 @@
-import tkinter as tk
-from tkinter import*
-
-top = Tk()
 top.geometry("500x500")
 
-answer = Text(width = 35, height =2)
+answer = Text(width=35, height =2)
 answer.place(x=100, y=100)
 
-def show(x):
-    try:
-        if x == "=":
-            final_answer = eval(answer.get(1.0, "end-1c"))
-            answer.insert(tk.INSERT, x)
-            answer.insert(tk.INSERT, final_answer)
-        else:
-            answer.insert(tk.INSERT, final_answer)
-                if x == "C":
-                    answer.delete(1.0, END)
-except:
-    answer.delete(1.0, END)
+CreateQ = button(top, text="Create Queue", width=10, height=5, command=lambda: show("1"))
+CreateQ.place(x=100, y=150)
 
-B1 = Bott
+enqueue = button(top, text="Enqueue", width=10, height=5, command=lambda: show("1"))
+enqueue.place(x=100, y=150)
+
+dequeue =button(top, text="dequeue", width=10, height=5, command=lambda: show("1"))
+dequeue.place(x=100, y=150)
+
+displayQueue =button(top, text="display queue", width=10, height=5, command=lambda: show("1"))
+displayQueue.place(x=100, y=150)
+
+
+
 
 class Queue:
     def __init__(self):
@@ -39,3 +35,23 @@ class Queue:
 #main code
 q1 = Queue()
 q2 = Queue()
+
+class Stack:
+    def __init__(self):
+        self.element = []
+    def push(self):
+        self.element.append((stack.get(1.0, "end-1c")))
+    def pop(self):
+        self.element.pop()
+    def displayStack(self):
+        print("Element in stack:")
+        for i in self.element:
+            print(i)
+
+s1 = Stack()
+s2 = Stack()
+
+s1.push()
+s1.push
+s1.pop()
+s1.displaystack()
